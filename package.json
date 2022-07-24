@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@create-figma-plugin/ui": "^1.8.4",
+    "@create-figma-plugin/utilities": "^1.9.2",
+    "copy-text-to-clipboard": "^3.0.1"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^1.9.2",
+    "@create-figma-plugin/tsconfig": "^1.9.2",
+    "@figma/plugin-typings": "1.45.0",
+    "typescript": "^4"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "figma-copy-link",
+    "name": "Figma Copy Link",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx",
+    "enablePrivatePluginApi": true
+  }
+}
